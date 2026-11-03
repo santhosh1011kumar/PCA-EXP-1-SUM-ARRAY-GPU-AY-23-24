@@ -1,8 +1,8 @@
 # PCA: EXP-1  SUM ARRAY GPU
 <h3>NAME : SANTHOSH KUMAR A</h3>
 <h3>REGISTER NO : 212224230250</h3>
-<h3>EX. NO</h3>
-<h3>DATE</h3>
+<h3>EX. NO : 1</h3>
+<h3>DATE : 27-10-2026</h3>
 <h1> <align=center> SUM ARRAY ON HOST AND DEVICE </h3>
 PCA-GPU-based-vector-summation.-Explore-the-differences.
 i) Using the program sumArraysOnGPU-timer.cu, set the block.x = 1023. Recompile and run it. Compare the result with the execution configuration of block.x = 1024. Try to explain the difference and the reason.
@@ -278,7 +278,9 @@ int main(int argc, char **argv)
 3. block.x = 256 ;
 <img width="845" height="212" alt="image" src="https://github.com/user-attachments/assets/0e07e5a5-f8d2-40d7-9b3e-e0204d24caf5" />
 
+4. block.x = 1023 ;
+<img width="858" height="190" alt="image" src="https://github.com/user-attachments/assets/9179a7f1-7605-487d-bc07-148fd8631110" />
 
 
 ## RESULT:
-Thus, Implementation of sum arrays on host and device is done in nvcc cuda using random number.
+All four configurations produce correct results. The 1024-thread block is the fastest in the given output. Small timing differences may occur due to GPU scheduling and measurement variations. Thus, Implementation of sum arrays on host and device is done in nvcc cuda using random number.
